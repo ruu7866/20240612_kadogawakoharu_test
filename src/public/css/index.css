@@ -1,0 +1,163 @@
+.header {
+    text-align: center;
+    border-bottom: solid 1px #d3d3d3;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    color: #706651;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Slabo 27px", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+
+}
+
+.contact-form__heading {
+    color: #706651;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 35px;
+    font-family: "Slabo 27px", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form__label--item {
+    color: #706651;
+}
+
+
+.form__label--required {
+    margin-left: 5px;
+    padding: 4px 6px;
+    border-radius: 3px;
+    color: #ff0000;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__input--checkbox {
+    color: #706651;
+}
+
+.form__input--checkbox input {
+    visibility: hidden;
+}
+
+label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+label::before,
+label::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+label::before {
+    background-color: #fff;
+    border: 1px solid #6d6350;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    left: 5px;
+}
+
+label::after {
+    background-color: #6d6350;
+    border-radius: 50%;
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    left: 7px
+}
+
+input:checked+label::after {
+    opacity: 1;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #8f8f8f;
+    appearance: none;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.form__input--text input {
+    height: 40px;
+    background-color: #f1f1f1;
+    border: none;
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+    background-color: #f1f1f1;
+    border: none;
+}
+
+.form__group--content select {
+    color: #afaeae;
+    background-color: #f1f1f1;
+    border: none;
+    width: 300px;
+    height: 40px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.form__button {
+    margin-top: 30px;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 20%;
+    border: none;
+    background: #706651;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
